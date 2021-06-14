@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LearnArrayList {
@@ -8,7 +9,7 @@ public class LearnArrayList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		List<Integer> list = new ArrayList();
+		List<Integer> list = new ArrayList<>();
 		list.add(1);
 		list.add(80);
 		list.add(39);
@@ -28,7 +29,7 @@ public class LearnArrayList {
 		System.out.println(list);
 		
 		// To add new List to the existing list
-		List<Integer> newList = new ArrayList();
+		List<Integer> newList = new ArrayList<>();
 		newList.add(100);
 		newList.add(120);
 		
@@ -37,11 +38,18 @@ public class LearnArrayList {
 		
 		// to get the element from index
 		
-		System.out.println(list.get(5));
+	/*	System.out.println(list.get(5));
 		
 		//to check if the element present in the list : It will return true or false
 		
 		System.out.println(list.contains(77));
+		
+		//To ittrate the list 
+		for(int i =0 ; i < list.size() ; i++)
+		{
+			System.out.println("Elements present is :" + list.get(i));
+		}
+		
 		
 		//remove an element from the array by index
 		
@@ -55,6 +63,19 @@ public class LearnArrayList {
 		
 		//remove all the element from the list 
 		list.clear();
+		System.out.println(list);
+		*/
+		
+		// sort the arrayList
+		Collections.sort(list);
+		System.out.println(list);
+		
+		//Sort array in reverse order
+		Collections.sort(list,Collections.reverseOrder());
+		System.out.println(list);
+		
+		//shuffle the object in arrayList
+		Collections.shuffle(list);
 		System.out.println(list);
 	}
 
