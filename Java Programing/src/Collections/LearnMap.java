@@ -15,6 +15,7 @@ public class LearnMap {
 		map.put("Two", 2);
 		map.put("Three", 3);
 		map.put("Four", 4);
+		map.put("Five", 5);
 		
 		System.out.println(map);
 		
