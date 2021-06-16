@@ -38,7 +38,7 @@ public class LearnMap {
 			//to print value
 			System.out.println(e.getValue());
 		}
-		
+		// new
 		//To print the Key value only through Iterator
 		for (String key : map.keySet()) {
 			
