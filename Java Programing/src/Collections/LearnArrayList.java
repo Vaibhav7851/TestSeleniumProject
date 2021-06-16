@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class LearnArrayList {
@@ -44,12 +45,22 @@ public class LearnArrayList {
 		
 		System.out.println(list.contains(77));
 		
-		//To ittrate the list 
+		//To ittrate the list usinf for loop
 		for(int i =0 ; i < list.size() ; i++)
 		{
 			System.out.println("Elements present is :" + list.get(i));
 		}
 		
+		// Iterate the list using Iterator
+		Iterator<Integer> it = list.iterator();
+		while(it.hasNext()) {
+			System.out.println("Iterator " +it.next());
+		}
+		
+		// Iterate using for each
+		for (Integer element : list) {
+			System.out.println(" The element is " +element);
+		}
 		
 		//remove an element from the array by index
 		
@@ -77,6 +88,7 @@ public class LearnArrayList {
 		//shuffle the object in arrayList
 		Collections.shuffle(list);
 		System.out.println(list);
+			
 	}
 
 }
