@@ -33,13 +33,13 @@ public class ContactPageTest extends TestBase{
 		//contactsPage = homePage.ClickOnContactsLink();
 	}
 
-	@Test(priority=1)
+	@Test(groups={"sanity"})
 	public void verifyContactLable() {
 		contactsPage = homePage.ClickOnContactsLink();
 		Assert.assertTrue(contactsPage.verifyContactsLable(),"Contacts Lable is Missing On Page");
 	}
 	
-	@Test(priority=2)
+	@Test(groups = {"sanity","regression"})
 	public void selectContactsText()
 	{
 		contactsPage = homePage.ClickOnContactsLink();
@@ -47,7 +47,7 @@ public class ContactPageTest extends TestBase{
 	}
 	
 	
-	@Test(priority=3)
+	@Test(groups= {"regression"})
 	public void validateCreateNewContact()
 	{
 		homePage.ClickOnNewContactLink();
