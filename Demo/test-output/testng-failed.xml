@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Grouping in TestNG]">
+  <test thread-count="5" name="Grouping in TestNG(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.crm.qa.testcases.ContactPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="validateCreateNewContact"/>
-          <include name="tearDown"/>
+          <include name="selectContactsText"/>
+          <include name="verifyContactLable"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Grouping in TestNG(failed) -->
+</suite> <!-- Failed suite [Grouping in TestNG] -->
