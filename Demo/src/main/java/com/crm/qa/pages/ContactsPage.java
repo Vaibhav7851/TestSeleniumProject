@@ -28,6 +28,7 @@ public class ContactsPage extends TestBase{
 	@FindBy(xpath="//select[@name='title']")
 	WebElement ContactInfoTitle;
 
+	
 	//Initializing the Page
 	public ContactsPage() {
 		PageFactory.initElements(driver,  this);
