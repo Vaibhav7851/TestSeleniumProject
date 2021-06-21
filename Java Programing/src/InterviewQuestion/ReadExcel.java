@@ -10,7 +10,7 @@ public class ReadExcel {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+/*
 		public Map<String, String> readExcel(String filePath, String fileName, String sheetName, String keyColName,
 	            String keyValue) {
 	        Map<String, String> colValMap = new HashMap<String, String>();
@@ -50,5 +50,6 @@ public class ReadExcel {
 
 	        return colValMap;
 	}
-
+*/
+}
 }
