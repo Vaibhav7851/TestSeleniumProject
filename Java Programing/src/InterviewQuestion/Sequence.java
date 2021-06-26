@@ -4,15 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class CharacterFrequencyInString {
+public class Sequence {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String s ="vaibhav sinha";
+		String s = "vaibhav Sinha";
 		char[] schar = s.toCharArray();
 		
-		Map<Character, Integer> charmap = new HashMap<>();
+		Map<Character,Integer> charmap = new HashMap<>();
 		
 		for (Character ch : schar) 
 		{
@@ -23,19 +23,18 @@ public class CharacterFrequencyInString {
 			else
 			{
 				charmap.put(ch, 1);
-				
 			}
-			}
-		Set<Character> keys = charmap.keySet();
+		}
 		
-		for (Character ch : keys)
+		Set<Character> keys = charmap.keySet();
+		for (Character ch : keys) 
 		{
 			if(charmap.get(ch)>1)
 			{
-				System.out.println("Character " + ch + " Repeating : "+ charmap.get(ch)+ " times." );
+				System.out.println("Character "+ ch + " Reapaeting " + charmap.get(ch) +" times");
 			}
-			
 		}
+
 	}
-	
+
 }

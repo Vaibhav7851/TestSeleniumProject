@@ -6,32 +6,20 @@ public class ToFindDuplicateCharacter {
 		// TODO Auto-generated method stub
 		
 		String s = "Great responsibility";  
-		int count,i,j;
-		char[] c = s.toCharArray();
+		int length = s.length();
+		char[] ch = s.toCharArray();
 		
-		System.out.println(" Duplicate Array are :");
-		
-		for(i=0;i<s.length();i++)
+		for (int i =0 ; i<length ;i++)
 		{
-			count=1;
-			for(j=i+1;j<s.length();j++)
+			for(int j=i+1 ; j<length ; j++)
 			{
-				if(c[i]==c[j] && c[i]!=' ')
+				if(ch[i] == ch[j])
 				{
-					count++;
-					//set the c[j] to zero so that visited charater can be avoided
-					c[j]= 0 ;
-					
+					System.out.println(" Character repeating are " +ch[j]);
+					break;
 				}
-			
-			}
-			
-			if(count >1 && c[i]!= '0')
-			{
-				System.out.println(c[i]);
 			}
 		}
-       
 	}
 
 }
